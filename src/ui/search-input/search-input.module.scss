@@ -1,0 +1,36 @@
+.shape {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  background-color: #ececec;
+  border-radius:32px;
+  padding:0 16px;
+  transition: background-color .16s linear;
+  &[data-focused="true"] {
+    background-color: #F4F4F4;
+    .iconContainer {
+      color: inherit;
+    }
+  }
+
+}
+
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  transition: color .16s linear;
+  color: #d9d9d9;
+
+}
+
+.actualInput {
+  border: none;
+  outline: none;
+  height: 48px;
+  background: transparent;
+  width: 100%;
+  font-size: 1rem;
+}
+
+

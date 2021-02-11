@@ -1,0 +1,59 @@
+.shape{
+  border-radius: 16px;
+  overflow:hidden;
+  display: inline-flex;
+  user-select:none;
+
+  &[data-highlighted="true"]{
+    color:white;
+    box-shadow: 0 4px 15px rgba(75, 190, 139, 0.25);
+
+    .shapePart{
+      background-color: #50BC8C;
+    }
+
+    .secondaryShapePart{
+
+      background-color: #56C996;
+
+    }
+  }
+
+
+.shapePart{
+  box-sizing: border-box;
+  padding:16px;
+  flex: 1;
+  height: 96px;
+  background-color: #f0f0f0;}
+}
+
+.secondaryShapePart{
+  box-sizing: border-box;
+  padding:16px;
+  height: 96px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.readingsList{
+  display: flex;
+  align-items: center;
+
+}
+
+.readingsListItem{
+  &:not(:last-child){
+    margin-right:16px
+  }
+}
+
+.additionalInfo{
+  &:not(:last-child){
+    margin-bottom:16px;
+  }
+}
+
+

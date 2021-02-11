@@ -1,0 +1,12 @@
+.dayContainer{
+  &:not(:last-child){
+    margin-bottom:64px;
+  }
+  overflow-x:auto;
+
+}
+
+.placeholder {
+  text-align: center;
+  color:#7B7B7B;
+}

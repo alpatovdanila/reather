@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=IBM+Plex+Sans:wght@400;600;700&display=swap');
+@import '~reset.css';
+
+
+html{
+  font-size:16px;
+}
+
+body{
+  color:#36495D;
+  padding:0;
+  margin:0;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+a{
+  color:#44B885;
+  border-bottom:1px solid currentColor;
+  text-decoration: none;
+}
