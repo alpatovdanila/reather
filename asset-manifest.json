@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/reather/static/css/main.2d711577.chunk.css",
-    "main.js": "/reather/static/js/main.13262d8c.chunk.js",
-    "main.js.map": "/reather/static/js/main.13262d8c.chunk.js.map",
+    "main.css": "/reather/static/css/main.3071716b.chunk.css",
+    "main.js": "/reather/static/js/main.6f7d79bb.chunk.js",
+    "main.js.map": "/reather/static/js/main.6f7d79bb.chunk.js.map",
     "runtime-main.js": "/reather/static/js/runtime-main.273704f6.js",
     "runtime-main.js.map": "/reather/static/js/runtime-main.273704f6.js.map",
     "static/js/2.f3853cb9.chunk.js": "/reather/static/js/2.f3853cb9.chunk.js",
@@ -10,10 +10,10 @@
     "static/js/3.f7916e69.chunk.js": "/reather/static/js/3.f7916e69.chunk.js",
     "static/js/3.f7916e69.chunk.js.map": "/reather/static/js/3.f7916e69.chunk.js.map",
     "index.html": "/reather/index.html",
-    "static/css/main.2d711577.chunk.css.map": "/reather/static/css/main.2d711577.chunk.css.map",
+    "static/css/main.3071716b.chunk.css.map": "/reather/static/css/main.3071716b.chunk.css.map",
     "static/js/2.f3853cb9.chunk.js.LICENSE.txt": "/reather/static/js/2.f3853cb9.chunk.js.LICENSE.txt",
     "static/media/Minus.40a29c2a.svg": "/reather/static/media/Minus.40a29c2a.svg",
-    "static/media/VEATHER.31701e61.svg": "/reather/static/media/VEATHER.31701e61.svg",
+    "static/media/REATHER.8d1aadcd.svg": "/reather/static/media/REATHER.8d1aadcd.svg",
     "static/media/cloud-drizzle.02fb46d6.svg": "/reather/static/media/cloud-drizzle.02fb46d6.svg",
     "static/media/cloud-lightning.df5a952f.svg": "/reather/static/media/cloud-lightning.df5a952f.svg",
     "static/media/cloud-rain.d2464f1a.svg": "/reather/static/media/cloud-rain.d2464f1a.svg",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.273704f6.js",
     "static/js/2.f3853cb9.chunk.js",
-    "static/css/main.2d711577.chunk.css",
-    "static/js/main.13262d8c.chunk.js"
+    "static/css/main.3071716b.chunk.css",
+    "static/js/main.6f7d79bb.chunk.js"
   ]
 }
