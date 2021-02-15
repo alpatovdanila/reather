@@ -4,9 +4,24 @@
   "description": "Someone really needed another weather app?",
   "icons": [
     {
-      "src": "/64.png",
+      "src": "/reather/static/64.png",
       "type": "image/png",
       "sizes": "64x64"
+    },
+    {
+      "src": "/reather/static/192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/reather/static/512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
-  ]
+  ],
+  "start_url": "https://alpatovdanila.github.io/reather/",
+  "background_color": "#222222",
+  "display": "standalone",
+  "startUrl": "https://alpatovdanila.github.io/reather/"
+
 }
