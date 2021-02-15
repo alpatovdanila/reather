@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "sideEffects": true,
+  "homepage": "https://alpatovdanila.github.io/reather/",
+  "author": {
+    "email": "alpatovdanila@gmail.com",
+    "name": "Alpatov Danila",
+    "url": "https://github.io/alpatovdanila"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "effector": "^21.8.2",

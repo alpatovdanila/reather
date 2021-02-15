@@ -1,7 +1,7 @@
 import { createStore, createEvent, createEffect } from 'effector'
 
 import config from 'config'
-import { stringifyUrl } from 'query-string'
+import { parseUrl, stringifyUrl } from 'query-string'
 const LOCAL_STORAGE_KEY = config.localStorageRootKey + '/queryHistory'
 
 export const $query = createStore<string | null>(null)
@@ -14,6 +14,12 @@ export const getHistoryFromStorageFx = createEffect(() => {
   const lsEntry = localStorage.getItem(LOCAL_STORAGE_KEY)
   if (lsEntry) return JSON.parse(lsEntry) as string[]
   throw Error('There is no saved history')
+})
+
+export const getQueryFromURLFx = createEffect(async () => {
+  const query = parseUrl(window.location.href).query
+  if (!!query.city && typeof query.city === 'string') return query.city
+  throw new Error('No city found in url')
 })
 
 export const writeHistoryToStorageFx = createEffect((history: string[]) => {
