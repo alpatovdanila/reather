@@ -4,17 +4,17 @@
   "description": "Someone really needed another weather app?",
   "icons": [
     {
-      "src": "/reather/static/64.png",
+      "src": "64.png",
       "type": "image/png",
       "sizes": "64x64"
     },
     {
-      "src": "/reather/static/192.png",
+      "src": "192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/reather/static/512.png",
+      "src": "512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
