@@ -1,7 +1,7 @@
 {
   "name": "reather",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "sideEffects": true,
   "homepage": "https://alpatovdanila.github.io/reather/",
   "author": {
