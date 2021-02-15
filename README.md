@@ -1,6 +1,7 @@
 ### React Weather
-Logo says Veather because design was initially drawn for VUE weather app
 
 Typescript / React / Effector / SCSS modules / OpenWeatherMap API
+
+Done in ~8 hours
 
 [DEMO](//alpatovdanila.github.io/reather/)
