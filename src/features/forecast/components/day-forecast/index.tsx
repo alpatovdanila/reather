@@ -5,24 +5,23 @@ import { FC, useMemo } from 'react'
 import ScrollContainer from 'react-indiana-drag-scroll'
 import { ForecastCard } from 'ui/forecast-card'
 import styles from './day-forecast.module.scss'
-type Props = {
-  dayForecast: DayForecastType
-}
 
-const localeDateOptions = {
+const timeIntl = new Intl.DateTimeFormat(config.locale, {
+  hour: '2-digit',
+  minute: '2-digit'
+})
+
+const dayIntl = new Intl.DateTimeFormat(config.locale, {
   weekday: 'long',
   month: 'long',
   day: 'numeric'
-}
-
-const localeTimeOptions = {
-  hour: '2-digit',
-  minute: '2-digit'
-}
+})
 
 const today = new Date(Date.now())
 
-export const DayForecast: FC<Props> = ({ dayForecast }) => {
+export const DayForecast: FC<{
+  dayForecast: DayForecastType
+}> = ({ dayForecast }) => {
   const isForToday = isSameDay(today, new Date(dayForecast.timestamp))
 
   const timeStampClosestToNow = useMemo(() => {
@@ -36,17 +35,13 @@ export const DayForecast: FC<Props> = ({ dayForecast }) => {
   return (
     <div className={styles.shape}>
       <div className={styles.title}>
-        {isForToday
-          ? 'Сегодня'
-          : new Date(dayForecast.timestamp).toLocaleDateString(config.locale, localeDateOptions)}
+        {isForToday ? 'Сегодня' : dayIntl.format(new Date(dayForecast.timestamp))}
       </div>
       <ScrollContainer className={styles.cards} hideScrollbars={true}>
         {dayForecast.forecasts.map((forecast) => (
           <div className={styles.card} key={forecast.timestamp}>
             <div className={styles.timeScale}>
-              <div className={styles.time}>
-                {new Date(forecast.timestamp).toLocaleTimeString(config.locale, localeTimeOptions)}
-              </div>
+              <div className={styles.time}>{timeIntl.format(new Date(forecast.timestamp))}</div>
             </div>
             <div className={styles.forecastCard}>
               <ForecastCard

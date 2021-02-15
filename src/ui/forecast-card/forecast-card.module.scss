@@ -1,23 +1,23 @@
-.shape{
+.shape {
   border-radius: 16px;
-  overflow:hidden;
+  overflow: hidden;
   display: inline-flex;
-  user-select:none;
+  user-select: none;
+  color:#3E3E3E;
 
-  &[data-highlighted="true"]{
-    color:white;
-    box-shadow: 0 4px 15px rgba(75, 190, 139, 0.25);
+  &[data-highlighted="true"] {
+    color: white;
+    box-shadow: 0 4px 15px rgba(101, 214, 244, 0.14);
 
-    .shapePart{
-      background-color: #50BC8C;
+    .shapePart {
+      background-color: #67DAF9;
     }
 
-    .secondaryShapePart{
-
-      background-color: #56C996;
-
+    .secondaryShapePart {
+      background-color: #58BFDB;
     }
   }
+}
 
 
 .shapePart{
@@ -25,7 +25,9 @@
   padding:16px;
   flex: 1;
   height: 96px;
-  background-color: #f0f0f0;}
+
+  background-color: #f0f0f0;
+
 }
 
 .secondaryShapePart{

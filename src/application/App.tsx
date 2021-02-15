@@ -1,11 +1,12 @@
-import { SearchForm } from '../features/search-form/components/search-form'
-import { useEffect } from 'react'
+import { SearchForm } from 'features/search-form/components/search-form'
+import { FC, useEffect } from 'react'
 import { applicationStarted } from './model'
-import { ReactComponent as VeatherLogo } from './VEATHER.svg'
+import { ReactComponent as ReatherLogo } from './REATHER.svg'
 import styles from './app.module.scss'
-import { FullForecast } from '../features/forecast/components/full-forecast'
+import { FullForecast } from 'features/forecast/components/full-forecast'
 import React from 'react'
-export default () => {
+
+const App: FC = () => {
   useEffect(() => {
     applicationStarted()
   }, [])
@@ -13,7 +14,7 @@ export default () => {
   return (
     <div className={styles.layout}>
       <div className={styles.logo}>
-        <VeatherLogo />
+        <ReatherLogo />
       </div>
       <div className={styles.content}>
         <div className={styles.form}>
@@ -29,3 +30,5 @@ export default () => {
     </div>
   )
 }
+
+export default App

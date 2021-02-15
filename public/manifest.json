@@ -1,0 +1,12 @@
+{
+  "short_name": "Reather",
+  "name": "Reather: React Weather App",
+  "description": "Someone really needed another weather app?",
+  "icons": [
+    {
+      "src": "/64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    }
+  ]
+}
