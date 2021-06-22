@@ -10,6 +10,7 @@
   &[data-focused="true"] {
     background-color: #F4F4F4;
     .iconContainer {
+      cursor:pointer;
       color: inherit;
     }
   }
