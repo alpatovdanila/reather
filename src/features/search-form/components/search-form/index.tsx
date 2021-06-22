@@ -27,6 +27,7 @@ export const SearchForm: FC = () => {
     <>
       <div className={styles.inputWrapper}>
         <SearchInput
+          onSearchClick={() => setQuery(inputQuery)}
           onKeyDown={handleInputKeyDown}
           value={inputQuery}
           onChange={handleInputChange}
